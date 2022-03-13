@@ -5,7 +5,7 @@ public class MaxAndMin {
 	public static void main(String[] args) {
 		int[] numbers = {10, 30, 2, 5, 8, 21, 16, 14};
 		/*
-		 * numbers 배열 안에서 가장 큰 값과 작은 값을 찾아 출력하시오.
+		 * numbers 배열 안에서 가장 큰 값과 가장 작은 값을 찾아 출력하시오.
 		 */
 		int max = 0;
 		int min = 0;
@@ -23,10 +23,9 @@ public class MaxAndMin {
 				min = numbers[i];
 			}
 		}
+		
 		System.out.println("최대값: " + max);
 		System.out.println("최소값: " + min);
-
-		
 	}
 
 }

@@ -10,18 +10,19 @@ public class IfElseEx2 {
 		 * x, y
 		 * 
 		 * 두 수를 입력해주세요: 10 20
+		 * 
 		 * 두 수중 큰 값은 20입니다.
 		 */
 		
 		Scanner scanner = new Scanner(System.in);
+		
 		int x = 0;
 		int y = 0;
 		int result = 0;
 		
-		System.out.println("두 수를 입력해주세요: ");
+		System.out.print("두 수를 입력해주세요: ");
 		x = scanner.nextInt();
 		y = scanner.nextInt();
-		
 		if(x == y) {
 			System.out.println("두 수가 같습니다.");
 		}else {
@@ -31,8 +32,9 @@ public class IfElseEx2 {
 				result = y;
 			}
 			System.out.println("두 수중 큰 값은 " + result + "입니다.");
-			
 		}
 		
+
 	}
+
 }

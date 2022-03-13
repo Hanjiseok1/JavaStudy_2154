@@ -3,12 +3,12 @@ package a08_함수;
 import java.util.Scanner;
 
 public class MethodEx5 {
-	
+
 	public static int sum(int x, int y) {
 		return x + y;
 	}
 	
-	public static void printStar1(int startCount) {
+	public static void main(String[] args) {
 		/*
 		 * 두수를 입력받고 두수의 합을 구하는 메서드를 구현하라.
 		 * sum()
@@ -20,13 +20,14 @@ public class MethodEx5 {
 		Scanner scanner = new Scanner(System.in);
 		int x = 0, y = 0;
 		
-		System.out.println("두 수를 입력하세요: ");
+		System.out.print("두 수를 입력하세요: ");
 		x = scanner.nextInt();
 		y = scanner.nextInt();
 		
 		int num = sum(x, y);
 		
 		System.out.println(sum(x, y));
+
 	}
 
 }

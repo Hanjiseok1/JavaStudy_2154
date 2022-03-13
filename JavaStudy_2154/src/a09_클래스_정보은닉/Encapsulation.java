@@ -1,9 +1,9 @@
 package a09_클래스_정보은닉;
 
 public class Encapsulation {
-	private String username; // 아이디
-	private String password; // 비밀번호
-	private String provider; // 서비스회사 google, kakao, naver
+	private String username; //아이디
+	private String password; //비밀번호
+	private String provider; //서비스회사 google, kakao, naver
 	
 	public Encapsulation(String password, String provider) {
 		super();
@@ -12,14 +12,14 @@ public class Encapsulation {
 	}
 	
 	public void setUsername(String username) {
-		if(provider.equals("kakao")) {
+		if(provider.equals("kakao")) {			
 			this.username = username + "@kakao.com";
 			
-		}else if(provider.equals("google")) {
+		}else if(provider.equals("google")){
 			this.username = username + "@gmail.com";
 			
 		}else if(provider.equals("naver")) {
-			this.username = username + "@naver.com";
+			this.username = username = "@naver.com";
 			
 		}else {
 			this.username = username;
@@ -31,7 +31,8 @@ public class Encapsulation {
 	}
 	
 	// getter
-	// public
+	// public 
+	
 	
 	
 	public void showInfo() {
@@ -55,5 +56,6 @@ public class Encapsulation {
 	public void setProvider(String provider) {
 		this.provider = provider;
 	}
+	
 	
 }

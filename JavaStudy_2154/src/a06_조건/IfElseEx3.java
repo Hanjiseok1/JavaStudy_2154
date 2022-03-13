@@ -17,17 +17,28 @@ public class IfElseEx3 {
 		int x = 0;
 		String result = null;
 		
-		System.out.println("수를 입력해주세요:");
+		System.out.print("수를 입력해주세요: ");
 		x = scanner.nextInt();
 		
 		if(x == 0) {
 			result = "0";
 		}else {
-			if(x % 2 ==0) {
+			if(x % 2 == 0) {
 				result = "짝수";
 			}else {
 				result = "홀수";
 			}
 		}
+		
+		System.out.println(result + "입니다.");
+		
+		
 	}
+
 }
+
+
+
+
+
+

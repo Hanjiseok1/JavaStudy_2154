@@ -5,7 +5,6 @@ import java.util.Scanner;
 import a13_인터페이스2.model.User;
 
 public class InputImpl implements Input {
-	
 	@Override
 	public char typedSelect(Scanner scanner) { //명령을 선택 입력후 해당 입력값 리턴
 		System.out.print("명령을 입력하세요: ");
@@ -13,6 +12,7 @@ public class InputImpl implements Input {
 		scanner.nextLine();
 		return select;
 	}
+	
 	@Override
 	public User typedUser(Scanner scanner) {
 		User user = new User();
@@ -25,7 +25,6 @@ public class InputImpl implements Input {
 		user.setName(scanner.nextLine());
 		System.out.print("회원이메일: ");
 		user.setEmail(scanner.nextLine());
-		
 		return user;
 	}
 	
@@ -36,4 +35,3 @@ public class InputImpl implements Input {
 		return scanner.nextLine();
 	}
 }
-

@@ -9,29 +9,27 @@ public class StudentArray {
 		students[2] = new Student("김준삼", 3);
 		students[3] = new Student("김준사", 1);
 		students[4] = new Student("김준오", 2);
-
+		
 		int[] yearCounts = new int[4];
-
 		/*
-		 * 1학년: 2명
-		 * 2학년: 1명
-		 * 3학년: 1명
-		 * 4학년: 1명
+		 * 1학년: 2명(김준일, 김준사)
+		 * 2학년: 1명(김준오)
+		 * 3학년: 1명(김준삼)
+		 * 4학년: 1명(김준이)
 		 */
 		
-		for(int i = 0; i < students.length; i++) {		
+		for(int i = 0; i < students.length; i++) {
 			int studentYear = students[i].getStudentYear();
 			if(studentYear == 1) {
-				yearCounts[0]++;				
+				yearCounts[0]++;
 			}else if(studentYear == 2) {
-				yearCounts[1]++;				
+				yearCounts[1]++;
 			}else if(studentYear == 3) {
-				yearCounts[2]++;				
+				yearCounts[2]++;
 			}else if(studentYear == 4) {
 				yearCounts[3]++;
 			}
 		}
-		
 		System.out.println("1학년: " + yearCounts[0] + "명");
 		System.out.println("2학년: " + yearCounts[1] + "명");
 		System.out.println("3학년: " + yearCounts[2] + "명");

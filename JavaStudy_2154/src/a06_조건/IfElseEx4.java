@@ -7,7 +7,7 @@ public class IfElseEx4 {
 	public static void main(String[] args) {
 		/*
 		 * 세 수중에 가장 큰 수를 찾는 문제
-		 *
+		 * 
 		 * 세 수를 입력해 주세요: 1 3 5
 		 * 
 		 * 가장 큰 수는 5입니다.
@@ -19,7 +19,7 @@ public class IfElseEx4 {
 		int z = 0;
 		int result = 0;
 		
-		System.out.println("세 수를 입력해주세요: ");
+		System.out.print("세 수를 입력해주세요: ");
 		x = scanner.nextInt();
 		y = scanner.nextInt();
 		z = scanner.nextInt();
@@ -32,11 +32,15 @@ public class IfElseEx4 {
 			}else {
 				result = y;
 			}
+			
 			if(result < z) {
 				result = z;
 			}
-			System.out.println("세 수중 큰 값은" + result + "입니다.");
+			
+			System.out.println("세 수중 큰 값은 " + result + "입니다.");
 		}
-		
+				
+
 	}
+
 }

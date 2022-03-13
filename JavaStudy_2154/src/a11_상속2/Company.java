@@ -4,11 +4,10 @@ public class Company {
 	private String companyName;
 	
 	public Company() {
-		
 	}
 	
-	public Company(String conpanyName) {
-		this.companyName = conpanyName;
+	public Company(String companyName) {
+		this.companyName = companyName;
 	}
 	
 	public String getCompanyName() {

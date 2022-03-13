@@ -20,7 +20,7 @@ public class IfElseEx6 {
 		int y = 0;
 		int result = 0;
 		
-		System.out.println("x축: ");
+		System.out.print("x축: ");
 		x = scanner.nextInt();
 		System.out.println("y축: ");
 		y = scanner.nextInt();
@@ -39,5 +39,8 @@ public class IfElseEx6 {
 			}
 			System.out.println(result + "사분면입니다.");
 		}
+		
+
 	}
+
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ScannerEx {
 
 	public static void main(String[] args) {
-		String name = "한지석";
+		String name = "김준일";
 		Scanner in = new Scanner(System.in);
 		String str = in.nextLine();
 		System.out.println(str);

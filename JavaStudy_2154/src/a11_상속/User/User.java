@@ -1,4 +1,5 @@
 package a11_상속.User;
+
 /*
  * User class
  * username
@@ -6,16 +7,16 @@ package a11_상속.User;
  * email
  * 
  * boolean login(아이디, 비밀번호)
- * 자기자신의 아이디와 매개변수의 아이디가 같으지
+ * 자기자신의 아이디와 매개변수의 아이디가 같은지
  * 그리고
  * 자기자신의 비밀번호와 매개변수의 비밀번호가 같은지
- * 둘다 같으면 true 리턴
- * ----------------------------------------------------------
+ * 둘다 같으며 true 리턴
+ * -------------------------------------------------------------
  * 
  * CompanyUser class
- * CompanyName
- * CompanyAddress
- * CompanyTel
+ * companyName
+ * companyAddress
+ * companyTel
  * 
  * PersonalUser class
  * name
@@ -70,6 +71,7 @@ public class User {
 			return false;
 		}
 	}
+	
 	
 	
 }

@@ -10,6 +10,7 @@ public class AnimalAbstractTest {
 		human.move();
 		tiger.move();
 		eagle.move();
+
 	}
 
 }

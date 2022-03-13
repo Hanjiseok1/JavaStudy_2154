@@ -10,13 +10,14 @@ public class GugudanWhile {
 			System.out.println(dan + " X " + (++num) + " = " + (dan * num));
 		}
 		
-		/* 
-		 * 2 X 1 = 2  
-		 * 2 X 2 = 4 
-		 * 2 X 3 = 6 
-		 * ......
-		 * 2 X 9 = 18
+		/*
+		 *  2 X 1 = 2
+		 *  2 X 2 = 4
+		 *  2 X 3 = 6
+		 *  ...
+		 *  2 X 9 = 18
 		 */
+		
 	}
 
 }

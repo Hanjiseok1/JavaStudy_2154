@@ -1,7 +1,7 @@
 package a11_상속2;
 
 public class DeliveryCompany extends Company {
-	
+
 	public DeliveryCompany() {
 		
 	}
@@ -17,7 +17,5 @@ public class DeliveryCompany extends Company {
 	
 	public void addMotorcycle() {
 		System.out.println(super.getCompanyName() + " 배달용 오토바이를 추가합니다.");
-	
 	}
-	
 }

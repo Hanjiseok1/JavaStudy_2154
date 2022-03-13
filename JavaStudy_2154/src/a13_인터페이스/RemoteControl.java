@@ -1,17 +1,17 @@
 package a13_인터페이스;
 
-public class RemoteControl implements PowerButton, valumeUpButton, valumeDownButton{
+public class RemoteControl implements PowerButton, VolumeUpButton, VolumeDownButton {
 
 	private boolean powerFlag;
 	
 	@Override
-	public void KeepTheDownButton() {
+	public void keepTheDownButton() {
 		// TODO Auto-generated method stub
 		System.out.println("사운드를 줄입니다.");
 	}
 
 	@Override
-	public void KeepTheUpButton() {
+	public void keepTheUpButton() {
 		// TODO Auto-generated method stub
 		System.out.println("사운드를 올립니다.");
 	}
@@ -29,8 +29,16 @@ public class RemoteControl implements PowerButton, valumeUpButton, valumeDownBut
 	}
 
 	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+	
+	@Override
 	public void sendSignal() {
 		// TODO Auto-generated method stub
 		System.out.println("전원 신호 " + powerFlag + "를 전송합니다.");
 	}
+
+	
 }

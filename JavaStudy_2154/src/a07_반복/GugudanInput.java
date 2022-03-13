@@ -9,6 +9,8 @@ public class GugudanInput {
 		 * 1. 몇단 부터 몇단 까지 출력할것인지 입력
 		 * start index: 5
 		 * end index: 8
+		 * 
+		 * 
 		 */
 		
 		Scanner scanner = new Scanner(System.in);
@@ -21,15 +23,13 @@ public class GugudanInput {
 		endIndex = scanner.nextInt();
 		System.out.println();
 		
-		
-		for(int i = startIndex; i < (endIndex - startIndex + 1); i++) {
+		for(int i = startIndex; i < (endIndex + 1); i++) {
 			System.out.println(i + "단");
-			for(int j = 0; j < 9; j++) {
+			for(int j = 0; j < 9;) {
 				System.out.println(i + " X " + (++j) + " = " + (i * j));
 			}
 			System.out.println();
 		}
-		
 		
 		int i = startIndex;
 		
@@ -44,6 +44,8 @@ public class GugudanInput {
 			System.out.println();
 			i++;
 		}
+
+		
 	}
 
 }

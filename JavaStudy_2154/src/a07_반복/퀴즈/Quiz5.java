@@ -8,7 +8,7 @@ public class Quiz5 {
 		Scanner scanner = new Scanner(System.in);
 		int n = 0;
 		
-		System.out.println("반복 횟수 입력: ");
+		System.out.print("반복 횟수 입력: ");
 		n = scanner.nextInt();
 		
 		for(int i = 0; i < n; i++) {
@@ -17,6 +17,8 @@ public class Quiz5 {
 			}
 			System.out.println();
 		}
+		
+
 	}
 
 }

@@ -6,15 +6,17 @@ public class Operation02 {
 		int num1 = 10;
 		int num2 = 30;
 		
-		System.out.println(num1 + num2++);
+		System.out.println(num1 + (num2++));
 		System.out.println(num2);
 		
 		/*
 		 * 정수형 변수 dan = 2
 		 * 정수형 변수 num = 1
 		 * 정수형 변수 result = dan * num
-		 *
-		 *2 X 1 = 2
+		 * 
+		 * 2 X 1 = 2
+		 * 
+		 * dan X num = result
 		 */
 		
 		int dan = 2;
@@ -27,14 +29,15 @@ public class Operation02 {
 		int month = 2;
 		int day = 21;
 		
-		// 2023년 3월 22일
-		// year++;
-		// month++;
-		// day++;
+		//2023년 3월 22일
+//		year++;
+//		month++;
+//		day++;
 		
-		System.out.println((++year) + " 년 " + (month) + " 월 " + (++day));
+		System.out.println((++year) + "년 " + (++month) + "월 " + (++day));
 		
 		
+
 	}
 
 }

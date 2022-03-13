@@ -1,118 +1,46 @@
 package a08_함수;
 
-import java.util.Scanner;
-
-/*
- * 계산기
- * 입력
- * 첫번째 수 입력
+/**
  * 
- * 사칙연산(+, -, *, /)
+ * 오버로딩의 개념.
  * 
- * 두번째 수 입력
+ * 메소드의 이름을 재사용할 수 있다.
  * 
- * 결과를 출력
- * 
- * 정수와 실루 모두 계산 가능해야함.
- * 
- * calc()
+ * 요리사에게 재료 3개를 주면 3개를 가지고 요리를 해야하고 1개를 주면 하나의 재료로 요리를 해야한다.
+ * 특징1. 매개변수의 개수에 따라 메소드를 정의 할 수 있다.
+ *
+ * 요리사에게 재료 2개를 주고 도구 1개를 전달한다. 
+ * 특징2. 매개변수의 자료형이 다르면 매개변수의 개수가 같아도 정의 할 수 있다.
  */
 
 public class MethodOverloading2 {
 	
-	public static String calc(Double num1, Double num2, char operator) {
-		String result = null;
-		
-		if(operator == '+') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '-') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '*') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '/') {
-			result = Double.toString(num1 + num2);
-		}else {
-			result = "계산 할 수 없는 연산자 입니다.";
-			
-		}
-		return result;
+	public static void sum() {
+		System.out.println("매개변수가 없습니다.");
 	}
 	
-	public static String calc(int num1, int num2, char operator) {
-		String result = null;
-		
-		if(operator == '+') {
-			result = Integer.toString(num1 + num2);
-		}else if(operator == '-') {
-			result = Integer.toString(num1 + num2);
-		}else if(operator == '*') {
-			result = Integer.toString(num1 + num2);
-		}else if(operator == '/') {
-			result = Integer.toString(num1 + num2);
-		}else {
-			result = "계산 할 수 없는 연산자 입니다.";
-			
-		}
-		return result;
+	public static void sum(int a) {
+		System.out.println(a + "(을)를 출력합니다.");
 	}
 	
-	public static String calc(int num1, Double num2, char operator) {
-		String result = null;
-		
-		if(operator == '+') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '-') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '*') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '/') {
-			result = Double.toString(num1 + num2);
-		}else {
-			result = "계산 할 수 없는 연산자 입니다.";
-			
-		}
-		return result;
+	public static void sum(int a, int b) {
+		System.out.println("a와 b의 합은 " + (a + b) + "입니다.");
 	}
 	
-	public static String calc(Double num1, int num2, char operator) {
-		String result = null;
-		
-		if(operator == '+') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '-') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '*') {
-			result = Double.toString(num1 + num2);
-		}else if(operator == '/') {
-			result = Double.toString(num1 + num2);
-		}else {
-			result = "계산 할 수 없는 연산자 입니다.";
-			
-		}
-		return result;
+	public static void sum(int a, double b) {
+		System.out.println("a와 b의 합은 " + (a + b) + "입니다.");
+	}
+	
+	public static void sum(String a, double b) {
+		System.out.println("a와 b의 합은 " + (Double.parseDouble(a) + b) + "입니다.");
 	}
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		String num1 = null, num2 = null;
-		char operator = ' ';
-		
-		System.out.print("첫번째 수 입력: ");
-		num1 = scanner.next();
-		
-		System.out.print("연산할 기호를 선택하세요: ");
-		operator = scanner.next().charAt(0);
-		
-		System.out.print("두번째 수 입력: ");
-		num2 = scanner.next();
-		
-		System.out.println("결과1: " + calc(Double.parseDouble(num1), Double.parseDouble(num2), operator));
-		System.out.println("결과2: " + calc(Integer.parseInt(num1), Integer.parseInt(num2), operator));
-		System.out.println("결과2: " + calc(Integer.parseInt(num1), Double.parseDouble(num2), operator));
-		System.out.println("결과2: " + calc(Double.parseDouble(num1), Integer.parseInt(num2), operator));
-		
-		
-
+		sum();
+		sum(1);
+		sum(10, 20);
+		sum(10, 2.5);
+		sum("10.7", 2.5);
 	}
-	
+
 }

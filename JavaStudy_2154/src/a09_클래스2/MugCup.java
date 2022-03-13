@@ -1,6 +1,6 @@
 package a09_클래스2;
 
-public class MugCup extends Product {
+public class MugCup extends Product{
 	public boolean handle;
 
 	public MugCup(int productCode, String productName, boolean handle) {

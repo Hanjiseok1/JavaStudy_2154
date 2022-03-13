@@ -7,6 +7,7 @@ import java.util.Scanner;
  * 윤달이면 출력
  * 윤달이 아니면 출력x
  * 4의 배수이면서 100의 배수는 아니고 400의 배수인것
+ * 
  */
 
 public class Quiz8 {
@@ -20,4 +21,5 @@ public class Quiz8 {
 			System.out.println(year);
 		}
 	}
+
 }

@@ -8,8 +8,8 @@ public class LoopEx {
 		
 		while(num < 100) {
 			result += (++num);
-			
 		}
+		
 		System.out.println(result);
 		
 		int i = 0;
@@ -19,20 +19,36 @@ public class LoopEx {
 			System.out.println(i);
 			System.out.println(i);
 		}
-				
-		System.out.println("-------------------------");
 		
-		for(int j = 0; j < 100; i++) {
+		
+		System.out.println("----------------------------");
+		
+		
+		for(int j = 0; j < 100; ) {
 			j++;
-			System.out.println(i);
+			System.out.println(j);
 		}
+		for(int j = 0; j < 100; ) {
+			j++;
+			System.out.println(j);
+		}
+		for(int j = 0; j < 100; ) {
+			j++;
+			System.out.println(j);
+		}
+		for(int j = 0; j < 100; ) {
+			j++;
+			System.out.println(j);
+		}
+		
 		
 		int k = 0;
 		for(; k < 100;) {
 			System.out.println(k);
 			k++;
 		}
-			
+		
+
 	}
 
 }

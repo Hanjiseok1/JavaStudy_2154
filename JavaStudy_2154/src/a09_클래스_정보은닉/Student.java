@@ -50,7 +50,7 @@ public class Student {
 		this.studentName = studentName;
 	}
 	
-	public void showStudentInfo() {
+	public void showStduentInfo() {
 		System.out.println("학교명: " + schoolName);
 		System.out.println("학번: " + studentCode);
 		System.out.println("학년: " + studentYear);

@@ -6,17 +6,17 @@ public class SwitchEx {
 		int select = 4;
 		
 		switch(select) {
-		case 1 :
-			System.out.println("1을 선택하셨습니다.");
-			break;
-		case 2 :
-			System.out.println("2를 선택하셨습니다.");
-			break;
-		case 3 :
-			System.out.println("3을 선택하셨습니다.");
-			break;
-		default :
-			System.out.println("해당 case는 없습니다.");
+			case 1 :
+				System.out.println("1을 선택하셨습니다.");
+				break;
+			case 2 :
+				System.out.println("2를 선택하셨습니다.");
+				break;
+			case 3 :
+				System.out.println("3을 선택하셨습니다.");
+				break;
+			default :
+				System.out.println("해당 case는 없습니다.");
 		}
 		
 		String select2 = "김준일";
@@ -34,23 +34,19 @@ public class SwitchEx {
 		}
 		
 		int num = 21;
-		
+				
 		switch(num == 0 ? 2 : num % 2) {
 			case 0 :
-			System.out.println("짝수입니다.");
+				System.out.println("짝수입니다.");
 				break;
 			case 1 :
-			System.out.println("홀수입니다.");
+				System.out.println("홀수입니다.");
 				break;
 			default :
 				System.out.println("num이 0입니다.");
-
-
-
-
-			
 		}
-	}	
+	}
+
 }
 
 

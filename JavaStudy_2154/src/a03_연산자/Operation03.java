@@ -18,9 +18,8 @@ public class Operation03 {
 					score > 79 ? 'B' : 
 						score > 69 ? 'C' :
 							score > 59 ? 'D' :
-								score > 0 ? 'F' : 'X' 
-												: 'X';
-							
+								score > -1 ? 'F' : ' '
+												 : 'X';
 	}
 
 }

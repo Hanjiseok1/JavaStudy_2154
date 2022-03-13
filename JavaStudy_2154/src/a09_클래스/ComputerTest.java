@@ -1,18 +1,15 @@
 package a09_클래스;
 
 public class ComputerTest {
-	
 	public ComputerTest() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
 
 	public static void main(String[] args) {
 		Computer c1 = null;
 		Computer c2 = null;
 		
-		c1 = new Computer(); // 생성(생성자 호출)
+		c1 = new Computer(); //생성(생성자 호출)
 		c2 = new Computer();
 		
 		System.out.println(c1);
@@ -26,6 +23,8 @@ public class ComputerTest {
 		
 		c1.printInfo();
 		c2.printInfo();
+		
+
 	}
 
 }

@@ -7,7 +7,7 @@ public class Computer {
 	public Computer() {
 		System.out.println("컴퓨터 객체를 생성합니다.");
 	}
-
+	
 	public void printInfo() {
 		System.out.println("컴퓨터 모델: " + model);
 	}

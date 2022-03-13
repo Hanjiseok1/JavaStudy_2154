@@ -17,12 +17,12 @@ package a09_클래스2;
  * 기름을 넣는다
  * 창문을 연다
  * 미디어(소리)를 켠다, 끈다
- * 
+ *
  * 프로그래밍 적인 사고
- * 클래스를 정의
+ * 클래스를 정의(참조 자료형을 정의)
  * 정의된 클래스를 생성
  * 생성시에 힙 메모리영역에 주소를 할당.
- * 
+ *
  */
 
 public class Product {
@@ -38,7 +38,6 @@ public class Product {
 		this.productCode = productCode;
 		this.productName = productName;
 	}
-
 
 
 	public int getProductCode() {
@@ -60,6 +59,5 @@ public class Product {
 	public void showProduct() {
 		System.out.println("상품코드: " + productCode);
 		System.out.println("상품명: " + productName);
-
 	}
 }

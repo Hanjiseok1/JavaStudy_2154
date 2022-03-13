@@ -16,7 +16,8 @@ public class FunctionEx {
 		System.out.println(calc(13, 20, 30));
 		System.out.println(calc(14, 20, 30));
 		System.out.println(calc(15, 20, 30));
-			
+		
+
 	}
 
 }

@@ -1,10 +1,12 @@
 package a09_클래스_정보은닉;
 
 /*
+ * 
  * username(아이디)
  * password(비밀번호)
  * name(이름)
  * email(이메일)
+ *
  */
 
 public class User {
@@ -24,6 +26,7 @@ public class User {
 		this.name = name;
 		this.email = email;
 	}
+	
 	public String getUsername() {
 		return username;
 	}
@@ -49,6 +52,4 @@ public class User {
 		this.email = email;
 	}
 	
-	
-
 }

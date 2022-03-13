@@ -8,7 +8,7 @@ public class ElectronicsCompany extends Company {
 	
 	public ElectronicsCompany(String companyName) {
 		super(companyName + "전자");
-	//	super.setCompanyName(companyName);
+//		super.setCompanyName(companyName);
 	}
 	
 	@Override
@@ -17,8 +17,8 @@ public class ElectronicsCompany extends Company {
 	}
 	
 	public void addFactory() {
-		System.out.println(super.getCompanyName() + "공장을 추가합니다.");
-		
+		System.out.println(super.getCompanyName() + " 공장을 추가합니다.");
 	}
+	
 	
 }

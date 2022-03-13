@@ -2,7 +2,6 @@ package a09_클래스_정보은닉;
 
 public class Car {
 	private String model;
-	public String setModel;
 	
 	public String getModel() {
 		return model;

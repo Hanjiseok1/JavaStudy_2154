@@ -12,7 +12,7 @@ package a13_인터페이스;
 public class InterfaceTest {
 
 	public static void main(String[] args) {
-		PowerButton button = new RemoteControl();
+		PowerButton button = new RemoteControl(); //
 		PowerButton button2 = new MonitorControl();
 		
 		PowerButton[] buttons = new PowerButton[2];
@@ -22,9 +22,8 @@ public class InterfaceTest {
 		
 		for(int i = 0; i < buttons.length; i++) {
 			buttons[i].onClick();
-			buttons[i].sendSignal();  
+			buttons[i].sendSignal();
 		}
-		
 	}
 
 }

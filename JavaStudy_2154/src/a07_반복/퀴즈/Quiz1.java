@@ -8,12 +8,14 @@ public class Quiz1 {
 		Scanner scanner = new Scanner(System.in);
 		int num = 0;
 		
-		System.out.println("반복 횟수 입력: ");
+		System.out.print("반복 횟수 입력: ");
 		num = scanner.nextInt();
 		
 		for(int i = 0; i < num; i++) {
 			System.out.println(i + 1);
 		}
+		
+
 	}
 
 }

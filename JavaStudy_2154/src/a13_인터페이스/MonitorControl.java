@@ -1,17 +1,17 @@
 package a13_인터페이스;
 
-public class MonitorControl implements PowerButton, valumeUpButton, valumeDownButton{
+public class MonitorControl implements PowerButton, VolumeUpButton, VolumeDownButton {
 
 	private boolean powerFlag;
 	
 	@Override
-	public void KeepTheDownButton() {
+	public void keepTheDownButton() {
 		// TODO Auto-generated method stub
 		System.out.println("모니터 스피커의 사운드를 줄입니다.");
 	}
 
 	@Override
-	public void KeepTheUpButton() {
+	public void keepTheUpButton() {
 		// TODO Auto-generated method stub
 		System.out.println("모니터 스피커의 사운드를 올립니다.");
 	}
@@ -33,4 +33,6 @@ public class MonitorControl implements PowerButton, valumeUpButton, valumeDownBu
 		// TODO Auto-generated method stub
 		System.out.println("모니터의 전원 신호 " + powerFlag + "를 전송합니다.");
 	}
+
+	
 }

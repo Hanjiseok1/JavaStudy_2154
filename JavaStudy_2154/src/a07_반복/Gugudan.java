@@ -6,7 +6,7 @@ public class Gugudan {
 		for(int i = 0; i < 8; i++) {
 			int dan = i + 2;
 			System.out.println(dan + "단");
-			for(int j = 0; j < 9; j++) {
+			for(int j = 0; j < 9;) {
 				System.out.println(dan + " X " + (++j) + " = " + (dan * j));
 			}
 			System.out.println();

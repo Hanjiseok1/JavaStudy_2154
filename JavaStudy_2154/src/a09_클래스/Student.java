@@ -1,7 +1,7 @@
 package a09_클래스;
 
 public class Student {
-	// 속성, 래퍼런스변수, 필드
+	//속성, 래퍼런스변수, 필드
 	String schoolName;
 	int studentYear;
 	int studentGroup;
@@ -18,12 +18,11 @@ public class Student {
 	public Student(String schoolName, String studentName) {
 		this.schoolName = schoolName;
 		this.studentName = studentName;
-		
 	}
 	
-	
+
 	public Student(String schoolName, int studentYear, int studentGroup, int studentnumber, String studentName,
-			String studentAddress, String studentphone, boolean graduationFlag) {// 전체 필드 생성자
+			String studentAddress, String studentphone, boolean graduationFlag) { //전체 필드 생성자
 		this();
 		this.schoolName = schoolName;
 		this.studentYear = studentYear;
@@ -36,9 +35,7 @@ public class Student {
 	}
 
 
-
 	public void showStudentInfo() {
-		
 		System.out.println("학교명: " + schoolName);
 		System.out.println("학년: " + studentYear);
 		System.out.println("반: " + studentGroup);
@@ -47,7 +44,6 @@ public class Student {
 		System.out.println("주소: " + studentAddress);
 		System.out.println("연락처: " + studentphone);
 		System.out.println("졸업구분: " + (graduationFlag == true ? "졸업" : "재학중"));
-		
 	}
 	
 	public void incrementYear() {
@@ -55,7 +51,6 @@ public class Student {
 			graduationFlag = true;
 		}else {
 			studentYear++;
-			
-		}		
+		}
 	}
 }
